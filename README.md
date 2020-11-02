@@ -28,9 +28,9 @@ Week 2 10.23.2020:
 
 Topics Covered
 
-Read and Write to files
-Rhino Project (create rhino commands)
-Introduction RhinoCommon API
+1. Read and Write to files 
+2. Rhino Project (create rhino commands)
+3. Introduction RhinoCommon API
 
 Task To Try out for week 2
 Create Rhino Command that ask user for point count in X-direction (int is input) and Y-direction (int is input),
