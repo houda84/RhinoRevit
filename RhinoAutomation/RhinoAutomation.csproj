@@ -57,6 +57,7 @@
     <Compile Include="Commands\ExportPoints_Command.cs" />
     <Compile Include="Commands\ImportPoints_Command.cs" />
     <Compile Include="Commands\BakePoints_Command.cs" />
+    <Compile Include="Commands\TestSweep.cs" />
     <Compile Include="Helper\HelperClass.cs" />
     <Compile Include="RhinoAutomationPlugIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
