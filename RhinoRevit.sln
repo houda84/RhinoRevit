@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoAutomation", "RhinoAut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrasshopperAutomation", "GrasshopperAutomation\GrasshopperAutomation.csproj", "{2B35CF20-FB67-4574-AA74-4E4DC846E992}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacRhinoAutomation", "MacRhinoAutomation\MacRhinoAutomation.csproj", "{938ADB9F-C404-4259-9040-E08E5B473CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacGrasshopperAutomation", "MacGrasshopperAutomation\MacGrasshopperAutomation.csproj", "{8C8BAA99-4F9B-4406-9989-DBA95886C870}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{2B35CF20-FB67-4574-AA74-4E4DC846E992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B35CF20-FB67-4574-AA74-4E4DC846E992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B35CF20-FB67-4574-AA74-4E4DC846E992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938ADB9F-C404-4259-9040-E08E5B473CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938ADB9F-C404-4259-9040-E08E5B473CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938ADB9F-C404-4259-9040-E08E5B473CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938ADB9F-C404-4259-9040-E08E5B473CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C8BAA99-4F9B-4406-9989-DBA95886C870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8BAA99-4F9B-4406-9989-DBA95886C870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8BAA99-4F9B-4406-9989-DBA95886C870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8BAA99-4F9B-4406-9989-DBA95886C870}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
