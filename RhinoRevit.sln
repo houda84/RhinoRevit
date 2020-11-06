@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacRhinoAutomation", "MacRh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacGrasshopperAutomation", "MacGrasshopperAutomation\MacGrasshopperAutomation.csproj", "{8C8BAA99-4F9B-4406-9989-DBA95886C870}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinesFromRandomPts", "LinesFromRandomPts\LinesFromRandomPts.csproj", "{379B22A7-72A1-44B8-9F3A-F02256627B6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8C8BAA99-4F9B-4406-9989-DBA95886C870}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C8BAA99-4F9B-4406-9989-DBA95886C870}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C8BAA99-4F9B-4406-9989-DBA95886C870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379B22A7-72A1-44B8-9F3A-F02256627B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379B22A7-72A1-44B8-9F3A-F02256627B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379B22A7-72A1-44B8-9F3A-F02256627B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379B22A7-72A1-44B8-9F3A-F02256627B6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

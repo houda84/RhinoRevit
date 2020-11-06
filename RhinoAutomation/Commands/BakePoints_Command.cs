@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using Inroduction;
+﻿using System.Collections.Generic;
 using Rhino;
 using Rhino.Commands;
 using Rhino.Geometry;
 using Rhino.Input;
-using Rhino.Input.Custom;
-using Rhino.DocObjects;
-using Rhino.DocObjects.Tables;
 
 namespace RhinoAutomation.Commands
 {
@@ -35,7 +30,7 @@ namespace RhinoAutomation.Commands
         protected override Result RunCommand(RhinoDoc doc, RunMode mode)
         {
             //declare a variable
-           int countX = 10;
+            int countX = 10;
             int countY = 10;
             //ask user to enter input and assing it to count
             Result result =  RhinoGet.GetInteger("Give point count for X direction", true, ref countX);
