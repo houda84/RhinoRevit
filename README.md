@@ -37,3 +37,33 @@ Create Rhino Command that ask user for point count in X-direction (int is input)
 also ask user for spacing between points (double is input). Upon valid inputs given generate grid of points. 
 (Hints: Use Rhino.Gemetry.Point3d class to create point Use total two "for loops" one for x direction and y direction nested in eachother.
 Use doc.Objects.AddPoint() method to bake points in Rhino viewport )
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Week 3 - 10.30.2020:
+
+Topics Covered
+
+
+Task To Try out for week 3
+1) Generate "N" number of random lines in given domain (domain is basically x dir/y dir/z dir range). 
+Upon generating random lines successfully, user shall able to export the data in .csv file, also the color(RGB values) for each line
+
+data structure of .csv File
+eg. see attached csv
+
+
+Hints
+1) line consists of 2 points, start point and end point. If user needs 20 lines that means algorithm shall generate 20 x 2 number of points 
+2) Generate random value for X Y Z co-ordinate for each point, create point with this values and add to list of points.
+
+3) There can be multiple ways to create lines from the generated points, few options mentioned below.	
+
+			
+	option A Random points selection:  select one random point from the list and select another random point from the list. 
+					   Connect these 2 points to form a line, before next iteration starts
+					   remove these selected points from the list so that they wont repeat while creating new line.
+
+	option B closest point selection:  Select one point from the list find the closest point which does not include the current point.
+					   select these 2 points to form a line, and remove these 2 points from the main list so these points wont repeate.

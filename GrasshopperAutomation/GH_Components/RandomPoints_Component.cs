@@ -8,12 +8,12 @@ using RhinoAutomation.Helper;
 
 namespace GrasshopperAutomation.GH_Components
 {
-    public class RandomPoints : GH_Component
+    public class RandomPoints_Component : GH_Component
     {
         /// <summary>
         /// Initializes a new instance of the RandomPoints class.
         /// </summary>
-        public RandomPoints()
+        public RandomPoints_Component()
           : base("RandomPoints", "randomPts",
               "Creates random points",
               "GrasshopperAutomation", "Points")
@@ -71,6 +71,9 @@ namespace GrasshopperAutomation.GH_Components
 
             List<Point3d> points =
                 HelperClass.GetRandomPoints(count,(int)xSize, (int)ySize, (int)zSize);
+
+            //Extrusion ext = Extrusion.Create(new Circle(Point3d.Origin, 1000).ToNurbsCurve(), 6000, true);
+            //Rhino.RhinoDoc.ActiveDoc.Objects.AddBrep(ext.ToBrep());
 
             if (sim)
                 this.ExpireSolution(true);

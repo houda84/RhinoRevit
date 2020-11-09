@@ -38,9 +38,6 @@
     <Reference Include="Eto, Version=2.5.0.0, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
       <HintPath>..\packages\RhinoCommon.7.0.20295.18003-beta\lib\net45\Eto.dll</HintPath>
     </Reference>
-    <Reference Include="FEMData">
-      <HintPath>..\..\Programming\RhinoIntro\bin\FEMData.dll</HintPath>
-    </Reference>
     <Reference Include="Rhino.UI, Version=7.0.20295.18000, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
       <HintPath>..\packages\RhinoCommon.7.0.20295.18003-beta\lib\net45\Rhino.UI.dll</HintPath>
     </Reference>

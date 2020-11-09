@@ -9,11 +9,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoAutomation", "RhinoAut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrasshopperAutomation", "GrasshopperAutomation\GrasshopperAutomation.csproj", "{2B35CF20-FB67-4574-AA74-4E4DC846E992}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacRhinoAutomation", "MacRhinoAutomation\MacRhinoAutomation.csproj", "{938ADB9F-C404-4259-9040-E08E5B473CD6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinesFromRandomPts", "LinesFromRandomPts\LinesFromRandomPts.csproj", "{379B22A7-72A1-44B8-9F3A-F02256627B6E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacGrasshopperAutomation", "MacGrasshopperAutomation\MacGrasshopperAutomation.csproj", "{099838E3-C60C-4F50-8524-6FCCF8767FC8}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitAutomation", "RevitAutomation\RevitAutomation.csproj", "{1020AA20-07A1-4345-878E-6D6DC4CFC282}"
+>>>>>>> b7aaf65e01f973fbff06fe1b007c454d7dd907a1
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,7 @@ Global
 		{2B35CF20-FB67-4574-AA74-4E4DC846E992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B35CF20-FB67-4574-AA74-4E4DC846E992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B35CF20-FB67-4574-AA74-4E4DC846E992}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{938ADB9F-C404-4259-9040-E08E5B473CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{938ADB9F-C404-4259-9040-E08E5B473CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{938ADB9F-C404-4259-9040-E08E5B473CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +50,12 @@ Global
 		{099838E3-C60C-4F50-8524-6FCCF8767FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{099838E3-C60C-4F50-8524-6FCCF8767FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{099838E3-C60C-4F50-8524-6FCCF8767FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{1020AA20-07A1-4345-878E-6D6DC4CFC282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1020AA20-07A1-4345-878E-6D6DC4CFC282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1020AA20-07A1-4345-878E-6D6DC4CFC282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1020AA20-07A1-4345-878E-6D6DC4CFC282}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> b7aaf65e01f973fbff06fe1b007c454d7dd907a1
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

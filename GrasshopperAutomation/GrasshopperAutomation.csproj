@@ -55,8 +55,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GH_Components\GridPoints.cs" />
-    <Compile Include="GH_Components\RandomPoints.cs" />
+    <Compile Include="GH_Components\GridPoints_Component.cs" />
+    <Compile Include="GH_Components\RandomPoints_Component.cs" />
+    <Compile Include="GH_Components\ShortestPath_Component.cs" />
     <Compile Include="GrasshopperAutomationInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -6,12 +6,12 @@ using Rhino.Geometry;
 
 namespace GrasshopperAutomation.GH_Components
 {
-    public class GridPoints : GH_Component
+    public class GridPoints_Component : GH_Component
     {
         /// <summary>
         /// Initializes a new instance of the GridPoints class.
         /// </summary>
-        public GridPoints()
+        public GridPoints_Component()
           : base("GridPoints", "gridPts",
               "Genarate grid of points",
               "GrasshopperAutomation", "Points")
