@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 using System.IO;
 
-namespace Inroduction
+namespace Introduction
 {
     /// <summary>
     /// this class deals with point
@@ -42,22 +42,6 @@ namespace Inroduction
 
             
             return csv;
-        }
-
-        /// <summary>
-        /// Export data to csv
-        /// </summary>
-        /// <param name="filePath"></param>
-        /// <param name="info"></param>
-        public static void ExportToCSV(string filePath,List<string> info)
-        {
-            if (File.Exists(filePath))
-            {
-                File.Delete(filePath);
-            }
-
-
-            File.WriteAllLines(filePath, info);
         }
 
 

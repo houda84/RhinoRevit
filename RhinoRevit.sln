@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inroduction", "Inroduction\Inroduction.csproj", "{5B2A609B-5B02-408A-8C7E-68C2DEE09F16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Introduction", "Inroduction\Introduction.csproj", "{5B2A609B-5B02-408A-8C7E-68C2DEE09F16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoAutomation", "RhinoAutomation\RhinoAutomation.csproj", "{8632494B-0710-4212-840C-247726F3EE4F}"
 EndProject

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inroduction
+namespace Introduction
 {
     public  class TestProgram
     {
@@ -32,7 +32,7 @@ namespace Inroduction
             string filePath = @"D:\WORK\MID-CD_CSharp Course\CSV_Files\pointInfo.csv";
 
             //Export to csv
-            PointInfo.ExportToCSV(filePath, sInfos);
+            Introduction.Helper.FileIO.ExportToCSV(filePath, sInfos);
 
             Console.ReadLine();
         }

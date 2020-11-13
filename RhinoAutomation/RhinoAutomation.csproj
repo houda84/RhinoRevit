@@ -54,7 +54,7 @@
     <Compile Include="Commands\ExportPoints_Command.cs" />
     <Compile Include="Commands\ImportPoints_Command.cs" />
     <Compile Include="Commands\BakePoints_Command.cs" />
-    <Compile Include="Commands\TestSweep.cs" />
+    <Compile Include="Commands\Sweep_Command.cs" />
     <Compile Include="Helper\HelperClass.cs" />
     <Compile Include="RhinoAutomationPlugIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,9 +63,9 @@
     <EmbeddedResource Include="EmbeddedResources\plugin-utility.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Inroduction\Inroduction.csproj">
+    <ProjectReference Include="..\Inroduction\Introduction.csproj">
       <Project>{5b2a609b-5b02-408a-8c7e-68c2dee09f16}</Project>
-      <Name>Inroduction</Name>
+      <Name>Introduction</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

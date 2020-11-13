@@ -46,7 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logic\myLogic.cs" />
+    <Compile Include="LineInfo.cs" />
+    <Compile Include="Helper\FileIO.cs" />
     <Compile Include="PointInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

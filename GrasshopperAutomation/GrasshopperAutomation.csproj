@@ -64,6 +64,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Inroduction\Introduction.csproj">
+      <Project>{5b2a609b-5b02-408a-8c7e-68c2dee09f16}</Project>
+      <Name>Introduction</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RhinoAutomation\RhinoAutomation.csproj">
       <Project>{8632494b-0710-4212-840c-247726f3ee4f}</Project>
       <Name>RhinoAutomation</Name>

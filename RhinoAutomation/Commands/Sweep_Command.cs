@@ -9,23 +9,23 @@ using Rhino.Input;
 
 namespace RhinoAutomation.Commands
 {
-    public class TestSweep : Command
+    public class Sweep_Command : Command
     {
-        static TestSweep _instance;
-        public TestSweep()
+        static Sweep_Command _instance;
+        public Sweep_Command()
         {
             _instance = this;
         }
 
         ///<summary>The only instance of the TestSweep command.</summary>
-        public static TestSweep Instance
+        public static Sweep_Command Instance
         {
             get { return _instance; }
         }
 
         public override string EnglishName
         {
-            get { return "TestSweep"; }
+            get { return "Test_Sweep"; }
         }
 
         protected override Result RunCommand(RhinoDoc doc, RunMode mode)

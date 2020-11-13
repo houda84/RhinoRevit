@@ -1,4 +1,4 @@
-﻿using Inroduction;
+﻿using Introduction;
 using Rhino;
 using Rhino.DocObjects.Tables;
 using Rhino.Geometry;
@@ -124,7 +124,6 @@ namespace RhinoAutomation.Helper
         {
             List<Line> lns = new List<Line>();
             orderedPoints = new List<Point3d>();
-
             List<Point3d> pts = new List<Point3d>(points);
 
 

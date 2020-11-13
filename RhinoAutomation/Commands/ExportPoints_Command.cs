@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Inroduction;
+using Introduction;
+using Introduction.Helper;
 using Rhino;
 using Rhino.Commands;
 using Rhino.Input;
@@ -60,7 +61,7 @@ namespace RhinoAutomation.Commands
             string filePath = @"D:\WORK\MID-CD_CSharp Course\CSV_Files\pointInfo.csv";
 
             //Export to csv
-            PointInfo.ExportToCSV(filePath, sInfos);
+            FileIO.ExportToCSV(filePath, sInfos);
 
             Rhino.RhinoApp.WriteLine($"{count} Points exported to CSV File");
             Rhino.UI.Dialogs.ShowMessage($"{count} Points exported to CSV File", "Information");
