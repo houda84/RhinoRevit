@@ -1,14 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
   <AddIn Type="Command">
-    <Name>GeometryImport</Name>
-    <FullClassName>RevitAutomation.Commands.GeometryImport_Command</FullClassName>
-    <Text>imports sat</Text>
-    <Description>geometry import for revit family</Description>
-    <VisibilityMode>VisibleInFamily</VisibilityMode>
-    <Assembly>C:\test\Lab1PlaceGroup\Lab1PlaceGroup\bin\Debug\Lab1placeGroup.dll</Assembly>
-    <AddInId>502fe383-2648-4e98-adf8-5e6047f9dc34</AddInId>
-    <VendorId>ADSK</VendorId>
-    <VendorDescription>Autodesk, Inc, www.autodesk.com</VendorDescription>
+    <Name>ReadFrom_CSV</Name>
+    <FullClassName>RevitAutomation.Commands.ReadFromCSV_Command</FullClassName>
+    <Text>read</Text>
+    <Description>this command reads fromcsv file</Description>
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2019\RevitAutomation\RevitAutomation.dll</Assembly>
+    <AddInId>7BE9691E-2D4D-4C5A-8E78-5F20996D184B</AddInId>
+    <VendorId>OBH</VendorId>
+    <VendorDescription>Omkar Bhagwat</VendorDescription>
   </AddIn>
 </RevitAddIns>

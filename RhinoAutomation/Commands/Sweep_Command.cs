@@ -30,18 +30,19 @@ namespace RhinoAutomation.Commands
 
         protected override Result RunCommand(RhinoDoc doc, RunMode mode)
         {
-            // TODO: complete command.
-            RhinoGet.GetOneObject("selcte profile section",true, ObjectType.InstanceReference, out ObjRef objRef);
 
+
+            RhinoGet.GetOneObject("selcte profile section",true, ObjectType.InstanceReference, out ObjRef objRef);
+            
             RhinoGet.GetOneObject("Select Profile Path", true, ObjectType.Curve, out ObjRef oRef);
 
             Polyline pl = null;
-            oRef?.Curve().TryGetPolyline(out pl);
-
+            oRef.Curve().TryGetPolyline(out pl);
+            
             if (pl==null)
                 return Result.Failure;
 
-
+            //objRef.Object()
             if(objRef.Object() is InstanceObject block)
             {
                 List<Curve> cvs = block.GetSubObjects()
@@ -50,16 +51,18 @@ namespace RhinoAutomation.Commands
                     .OrderByDescending(c => AreaMassProperties.Compute(c).Area)
                     .ToList();
 
+
                 Curve outline = cvs[0];
-
+     
                 outline.TryGetPlane(out Plane profileBasePlane);
-
                 pl.SegmentAt(0).ToNurbsCurve().PerpendicularFrameAt(0, out Plane polyLinePlane);
+
 
                 Transform xForm = Transform.PlaneToPlane(profileBasePlane, polyLinePlane);
                 Brep outerBrep = null;
                 int i = 0;
                 List<Brep> otherBrps = new List<Brep>();
+                
                 foreach (Curve curve in cvs)
                 {
                     curve.Transform(xForm);

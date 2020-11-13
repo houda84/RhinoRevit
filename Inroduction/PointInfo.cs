@@ -38,9 +38,6 @@ namespace Introduction
         {
             string csv = $"{X}|{Y}|{Z}";
 
-            // "3.45,5.0, 23"
-
-            
             return csv;
         }
 
@@ -174,4 +171,5 @@ namespace Introduction
         #endregion
 
     }
+
 }

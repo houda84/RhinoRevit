@@ -40,7 +40,6 @@ namespace GrasshopperAutomation.GH_Components
             pManager.AddPointParameter("start point", "startPt", "", GH_ParamAccess.item);
             pManager.AddPointParameter("target points", "targetPts", "", GH_ParamAccess.list);
 
-            pManager[2].Optional = true;
 
         }
 
@@ -77,7 +76,8 @@ namespace GrasshopperAutomation.GH_Components
             #endregion
 
             //Generate line network (this can be a any logic, not necessarily a short path or something)
-            List<Line> lns = HelperClass.MakeShortestPath(startPt, points,out List<Point3d> orderedPts);
+            List<Point3d> orderedPts;
+            List<Line> lns = HelperClass.MakeShortestPath(startPt, points,out orderedPts);
 
             //either export is true OR bake is true
             if (export||bake)
@@ -96,8 +96,8 @@ namespace GrasshopperAutomation.GH_Components
                         ObjectAttributes objAtt = new ObjectAttributes();
                         objAtt.ColorSource = Rhino.DocObjects.ObjectColorSource.ColorFromObject;
                         objAtt.ObjectColor = System.Drawing.Color.FromArgb(li.Red, li.Green, li.Blue);
-
-                        Rhino.RhinoDoc.ActiveDoc.Objects.AddLine(ln,objAtt);
+                        
+                        Rhino.RhinoDoc.ActiveDoc.Objects.AddLine(ln, objAtt);
                     }
                 }
 
@@ -115,7 +115,11 @@ namespace GrasshopperAutomation.GH_Components
                     // c#  lambda expression (System.Linq)
                     List<string> ptStrings = ptInfos.Select(p => p.Get_CSVString())
                         .ToList();
+
+                    //foreach (PointInfo pi in ptInfos)
+                    //    ptStrings.Add(pi.Get_CSVString());
                     
+
                     List<string> lnsString = lineInfos.Select(ln => ln.Get_CSVString(ptInfos))
                         .ToList();
 

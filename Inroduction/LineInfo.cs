@@ -25,9 +25,11 @@ namespace Introduction
         {
 
         }
+
         public LineInfo(PointInfo startPt, PointInfo endPt)
         {
-            this.StartPoint = startPt;
+
+            StartPoint = startPt;
             this.EndPoint = endPt;
 
             SetRandomRGB_Data();
