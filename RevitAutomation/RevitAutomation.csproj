@@ -32,6 +32,10 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
+    <Reference Include="Grasshopper">
+      <HintPath>..\..\..\..\..\..\Program Files\Rhino 7 WIP\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="RevitAPI">
       <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
       <Private>False</Private>
@@ -40,8 +44,17 @@
       <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="RhinoCommon">
+      <HintPath>..\..\..\..\..\..\Program Files\Rhino 7 WIP\System\RhinoCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RhinoInside.Revit">
+      <HintPath>..\..\..\..\AppData\Roaming\Autodesk\Revit\Addins\2019\RhinoInside.Revit\RhinoInside.Revit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\ReadFromCSV_Command.cs" />
+    <Compile Include="GH_Components\ShortestPath_Component.cs" />
+    <Compile Include="Helper\ConvertRevit.cs" />
+    <Compile Include="Helper\FilterData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +79,15 @@
       <Project>{5b2a609b-5b02-408a-8c7e-68c2dee09f16}</Project>
       <Name>Introduction</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RhinoAutomation\RhinoAutomation.csproj">
+      <Project>{8632494b-0710-4212-840c-247726f3ee4f}</Project>
+      <Name>RhinoAutomation</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TragetDir)$(ProjectName).addin" "C:\ProgramData\Autodesk\Revit\Addins\2019\$(ProjectName).addin"
+copy "$(TragetDir)$(ProjectName).dll" "%25APPDATA%25\Grasshopper\Libraries\$(ProjectName).gha"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

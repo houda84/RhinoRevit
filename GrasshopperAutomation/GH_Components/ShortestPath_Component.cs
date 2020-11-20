@@ -15,8 +15,6 @@ namespace GrasshopperAutomation.GH_Components
     public class ShortestPath_Component : GH_Component
     {
         //assign file names
-        const string pointInfos_FileName = "pointInfos.csv";
-        const string lineInfos_FileName = "lineInfos.csv";
 
         /// <summary>
         /// Initializes a new instance of the ShortestPath_Component class.
@@ -106,8 +104,8 @@ namespace GrasshopperAutomation.GH_Components
                 {
                     List<PointInfo> ptInfos = ConverTo_PointInfo(orderedPts);
 
-                    string ptInfoFilePath = Introduction.Helper.FileIO.CreateFilePath(folderPath, pointInfos_FileName);
-                    string lnInfoFilePath = FileIO.CreateFilePath(folderPath, lineInfos_FileName);
+                    string ptInfoFilePath = Introduction.Helper.FileIO.CreateFilePath(folderPath, FileIO.pointInfos_FileName);
+                    string lnInfoFilePath = FileIO.CreateFilePath(folderPath, FileIO.lineInfos_FileName);
 
                     if (ptInfoFilePath == null || lnInfoFilePath == null)
                         return;

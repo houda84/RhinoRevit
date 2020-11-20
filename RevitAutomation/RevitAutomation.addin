@@ -3,8 +3,8 @@
   <AddIn Type="Command">
     <Name>ReadFrom_CSV</Name>
     <FullClassName>RevitAutomation.Commands.ReadFromCSV_Command</FullClassName>
-    <Text>read</Text>
-    <Description>this command reads fromcsv file</Description>
+    <Text>CreatBeams</Text>
+    <Description>this command reads from csv file</Description>
     <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2019\RevitAutomation\RevitAutomation.dll</Assembly>
     <AddInId>7BE9691E-2D4D-4C5A-8E78-5F20996D184B</AddInId>
     <VendorId>OBH</VendorId>

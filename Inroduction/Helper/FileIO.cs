@@ -9,6 +9,10 @@ namespace Introduction.Helper
 {
     public static class FileIO
     {
+        public const string pointInfos_FileName = "pointInfos.csv";
+        public const string lineInfos_FileName = "lineInfos.csv";
+
+
         /// <summary>
         /// Export data to csv
         /// </summary>
@@ -32,6 +36,14 @@ namespace Introduction.Helper
             }
 
             return null;
+        }
+
+        public static List<string> ReadFromCSV(string filePath)
+        {
+            if (!File.Exists(filePath))
+                return new List<string>();
+
+            return File.ReadAllLines(filePath).ToList();
         }
     }
 }

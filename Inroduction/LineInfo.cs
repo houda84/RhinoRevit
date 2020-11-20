@@ -1,5 +1,6 @@
 ﻿
 
+using Introduction.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,7 +77,7 @@ namespace Introduction
             return -1;
         }
 
-        public static LineInfo GetLineInfo_FromString(string s,List<PointInfo>points)
+        private static LineInfo GetLineInfo_FromString(string s,List<PointInfo>points)
         {
             LineInfo ln = new LineInfo();
             string[] cols = s.Split(new char[] { '|' });
@@ -97,6 +98,25 @@ namespace Introduction
                 ln.Green = green;
 
             return ln;
+        }
+
+        public static List<LineInfo> ReadFrom_CSV(string lineInfoFile,string pointInfoFile)
+        {
+
+            List<PointInfo> pInfos = PointInfo.ReadFrom_CSV(pointInfoFile);
+
+            List<string> infos = FileIO.ReadFromCSV(lineInfoFile);
+
+            List<LineInfo> lns = new List<LineInfo>();
+            foreach (string s in infos)
+            {
+               LineInfo ln = GetLineInfo_FromString(s, pInfos);
+                if (ln.StartPoint == null)
+                    continue;
+
+                lns.Add(ln);
+            }
+            return lns;
         }
 
     }
